@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bootstrap 模板</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 引入 Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<form role="form">
+    <div class="form-group">
+        <label for="name">名称</label>
+        <input type="text" class="form-control" id="name" placeholder="请输入名称"/>
+    </div>
+    <div class="form-group">
+        <label for="inputfile">文件输入</label>
+        <input type="file" id="inputfile"/>
+        <p class="help-block">这里是块级帮助文本的实例</p>
+    </div>
+    <div class="checkbox">
+        <label><input type="checkbox">请打钩</label>
+    </div>
+    <button type="submit" class="btn btn-default">提交</button>
+</form>
+------------------------------------------------
+
+<form role="form" class="form-inline">
+    <div class="form-group">
+        <label for="name2" class="sr-only">名称</label>
+        <input type="text" class="form-control" id="name2" placeholder="请输入名称">
+    </div>
+    <div class="form-group">
+        <label for="inputfile2" class="sr-only">文件输入</label>
+        <input type="file" id="inputfile2">
+    </div>
+    <div class="checkbox">
+        <label><input type="checkbox">请打钩</label>
+    </div>
+</form>
+
+---------------------------------------------
+
+<form class="form-horizontal" role="form">
+    <div class="form-group">
+        <label for="firstname" class="col-sm-2 control-label">名字</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="firstname" placeholder="请输入名字"/>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="lastname" class="col-sm-2 control-label">姓名</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="lastname" placeholder="请输入姓"/>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox">请记住我
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-default">登录</button>
+        </div>
+    </div>
+</form>
+============================================================================
+<form role="form">
+    <div class="form-group">
+        <label for="name">文本框</label>
+        <textarea class="form-control" rows="3"></textarea>
+    </div>
+</form>
+============================================================================
+<form role="form" class="form-horizontal">
+    <div class="form-group">
+        <label class="col-sm-2 control-label">聚焦</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" placeholder="请输入框获得焦点。。。">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-sm-2 control-label" for="inputPassword">禁用</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" disabled id="inputPassword" placeholder="该输入框禁止输入"/>
+        </div>
+    </div>
+
+    <fieldset disabled>
+        <div class="form-group">
+            <label for="disabledTextInput" class="col-sm-2 control-label">禁用输入（Fieldset disabled）</label>
+            <div class="col-sm-10">
+                <input type="text" id="disabledTextInput" class="form-control" placeholder="禁止输入">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="disabledSelect" class="col-sm-2 control-label">禁用选择菜单（Fieldset disabled）</label>
+            <div class="col-sm-10">
+                <select id="disabledSelect" class="form-control">
+                    <option>禁止选择</option>
+                </select>
+            </div>
+        </div>
+    </fieldset>
+
+    <div class="form-group has-success">
+        <label class="col-sm-2 control-label" for="inputSuccess">输入成功</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputSuccess">
+        </div>
+    </div>
+    <div class="form-group has-warning">
+        <label class="col-sm-2 control-label" for="inputWarning">输入警告</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputWarning">
+        </div>
+    </div>
+    <div class="form-group has-error">
+        <label class="col-sm-2 control-label" for="inputError">输入错误</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputError">
+        </div>
+
+    </div>
+
+
+    ======================================================================
+    <div style="padding: 100px 100px 10px;">
+        <div class="input-group col-sm-6">
+            <span class="input-group-addon">$</span>
+            <input type="text" class="form-control">
+            <span class="input-group-addon">.00</span>
+        </div>
+        <br>
+        <div class="col-sm-6">
+            <div class="input-group">
+                <input type="text" class="form-control">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">Go!</button>
+                    </span>
+            </div>
+        </div>
+        <br><br>
+        <div class="input-group col-sm-7">
+            <input type="text" class="form-control">
+            <div class="input-group-btn">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">下拉菜单<span
+                        class="caret"></span></button>
+                <ul class="dropdown-menu pull-right">
+                    <li><a href="#">功能</a></li>
+                    <li><a href="#">另一个能</a></li>
+                    <li><a href="#">其他</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">分离的功能</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button type="button" class="btn btn-primary dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown">主题<span class="caret"></span> </button>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+            <li role="presentation">
+                <a role="menuitem" tabindex="-1" href="#">Java</a>
+            </li>
+            <li role="presentation">
+                <a role="menuitem" tabindex="-1" href="#">数据挖掘</a>
+            </li>
+            <li role="presentation">
+                <a role="menuitem" tabindex="-1" href="#">通信</a>
+            </li>
+            <li role="presentation" class="divider"></li>
+            <li role="presentation">
+                <a role="menuitem" tabindex="-1" href="#">分离的连接</a>
+            </li>
+
+        </ul>
+    </div>
+</form>
+</body>
+</html>

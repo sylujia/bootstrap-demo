@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bootstrap 模板</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 引入 Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<p>标签label的使用</p>
+<span class="label label-default">默认标签</span>
+<span class="label label-primary">主要标签</span>
+<span class="label label-success">成功标签</span>
+<span class="label label-info">信息标签</span>
+<span class="label label-warning">警告标签</span>
+<span class="label label-danger">危险标签</span>
+
+<br><br><br>
+<p>徽章badge的使用</p>
+<h4>胶囊式导航中的激活状态</h4>
+<ul class="nav nav-pills">
+    <li class="active"><a href="#">首页<span class="badge">32</span> </a></li>
+    <li><a href="#">简介</a></li>
+    <li><a href="#">消息<span class="badge">3</span> </a></li>
+</ul>
+<br>
+<h4>列表导航中的激活状态</h4>
+<ul class="nav nav-pills nav-stacked" style="max-width: 260px;">
+    <li class="active"><a href="#">首页<span class="badge pull-right">32</span> </a></li>
+    <li><a href="#">简介</a></li>
+    <li><a href="#">消息<span class="badge pull-right">3</span> </a></li>
+</ul>
+
+<br><br><br>
+<p>超大屏幕（Jumbotron）</p>
+<div class="container">
+    <div class="jumbotron center-block" style="max-width: 800px;">
+        <h1>欢迎登录页面！</h1>
+        <p>这是一个超大屏幕（Jumbotron）的实例。</p>
+        <p><a class="btn btn-primary btn-lg">学习更多</a></p>
+    </div>
+</div>
+<p>占用全部宽度且不带圆角的超大屏幕（Jumbotron）</p>
+<div class="jumbotron center-block" style="max-width: 800px;">
+    <div class="container">
+        <h1>欢迎登陆页面！</h1>
+        <p>这是一个超大屏幕（Jumbotron）的实例。</p>
+        <p><a class="btn btn-primary btn-lg" role="button">
+            学习更多</a>
+        </p>
+    </div>
+</div>
+
+
+<br><br><br>
+<p>页面标题（Page Header）是个不错的功能，它会在网页标题四周添加适当的间距。</p>
+<div class="page-header">
+    <h1>页面标题实例
+        <small>子标签</small>
+    </h1>
+</div>
+<p>当一个网页中有多个标题且每个标题之间需要添加一定的间距时，页面标题这个功能就显得特别有用。如需使用页面标题（Page Header），请把您的标题放置在带有 class .page-header 的 &lt;div&gt;
+    中.</p>
+
+<br><br><br>
+
+<div class="container" style="max-width: 400px;">
+    <p>警告（Alerts）</p>
+    <div class="alert alert-success">成功！很好地完成了提交。</div>
+    <div class="alert alert-info">信息！请注意这个信息。</div>
+    <div class="alert alert-warning">警告！请不要提交。</div>
+    <div class="alert alert-danger">错误！请进行一些更改。</div>
+
+    <br><br><br>
+    <p>可取消的警告（Dismissal Alert）</p>
+    <div class="alert alert-success ">
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+        成功！很好的完成了提交。
+    </div>
+
+    <br><br><br>
+    <p>警告（Alerts）中的链接</p>
+    <div class="alert alert-success">
+        <a href="#" class="alert-link">成功！很好地完成了提交。</a>
+    </div>
+</div>
+
+<br><br><br>
+
+<div class="center-block" style="max-width: 800px;">
+    <p>列表组,列表组件用于以列表形式呈现复杂的和自定义的内容。</p>
+    <div class="list-group">
+        <a href="#" class="list-group-item active">
+            <h4 class="list-group-item-heading">
+                入门网站包
+            </h4>
+        </a>
+        <a href="#" class="list-group-item">
+            <h4 class="list-group-item-heading">
+                免费域名注册
+            </h4>
+            <p class="list-group-item-text">
+                您将通过网页进行免费域名注册。
+            </p>
+        </a>
+        <a href="#" class="list-group-item">
+            <h4 class="list-group-item-heading">
+                24*7 支持
+            </h4>
+            <p class="list-group-item-text">
+                我们提供 24*7 支持。
+            </p>
+        </a>
+    </div>
+
+</div>
+<div style="height: 400px"></div>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bootstrap 模板</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 引入 Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+    <p>标签式导航菜单</p>
+    <ul class="nav nav-tabs">
+        <li class="active"><a href="#">Home</a> </li>
+        <li><a href="#">SVN</a> </li>
+        <li><a href="#">iOS</a> </li>
+        <li><a href="#">Java</a> </li>
+        <li><a href="#">PHP</a> </li>
+    </ul>
+
+    <p>基本的胶囊式导航菜单</p>
+    <ul class="nav nav-pills">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">SVN</a></li>
+        <li><a href="#">iOS</a></li>
+        <li><a href="#">VB.Net</a></li>
+        <li><a href="#">Java</a></li>
+        <li><a href="#">PHP</a></li>
+    </ul>
+
+    <p>垂直的胶囊式导航菜单</p>
+    <ul class="nav nav-pills nav-stacked" style="width:20%">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">SVN</a></li>
+        <li><a href="#">iOS</a></li>
+        <li><a href="#">VB.Net</a></li>
+        <li><a href="#">Java</a></li>
+        <li><a href="#">PHP</a></li>
+    </ul>
+
+    <p>两端对齐的导航元素,使用 class .nav-justified，让标签式或胶囊式导航菜单与父元素等宽。在更小的屏幕上，导航链接会堆叠。</p>
+    <ul class="nav nav-pills nav-justified">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">SVN</a></li>
+        <li class="disabled"><a href="#">iOS(禁用)</a></li>
+        <li><a href="#">VB.Net</a></li>
+        <li><a href="#">Java</a></li>
+        <li><a href="#">PHP</a></li>
+    </ul><br><br>
+
+    <p>带有下拉菜单的导航</p>
+    <ul class="nav nav-pills">
+        <li class="active"><a href="#">Home</a> </li>
+        <li><a href="#">SVN</a> </li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Java <span class="caret"></span> </a>
+            <ul class="dropdown-menu">
+                <li><a href="#">Swing</a> </li>
+                <li><a href="#">jMeter</a> </li>
+                <li><a href="#">EJB</a> </li>
+                <li class="divider"></li>
+                <li><a href="#">分离的连接</a> </li>
+            </ul>
+        </li>
+        <li><a href="#">PHP</a> </li>
+    </ul>
+
+    <div class="container">
+        <h2>动态标签</h2>
+        <p><strong>提示：</strong>修改nav-pills为nav-tabs来设置卡片式标签页</p>
+        <ul class="nav nav-pills">
+            <li class="active"><a data-toggle="tab" href="#home">Home</a> </li>
+            <li><a data-toggle="tab" href="#menu1">菜单1</a> </li>
+            <li><a data-toggle="tab" href="#menu2">菜单2</a> </li>
+            <li><a data-toggle="tab" href="#menu3">菜单3</a> </li>
+        </ul>
+        <div class="tab-content">
+            <div id="home" class="tab-pane fade in active">
+                <h3>首页</h3>
+                <p>学的不仅是技术，更是梦想！！！</p>
+            </div>
+            <div id="menu1" class="tab-pane fade">
+                <h3>菜单1</h3>
+                <p>菜单1学的不仅是技术，更是梦想！！！</p>
+            </div>
+            <div id="menu2" class="tab-pane fade">
+                <h3>菜单2</h3>
+                <p>菜单2学的不仅是技术，更是梦想！！！</p>
+            </div>
+            <div id="menu3" class="tab-pane fade">
+                <h3>菜单3</h3>
+                <p>菜单3学的不仅是技术，更是梦想！！！</p>
+            </div>
+        </div>
+    </div>
+<div style="height: 200px;"></div>
+</body>
+</html>

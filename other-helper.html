@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bootstrap 模板</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 引入 Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <h2>文本</h2>
+    <p class="text-muted">该段落使用了样式“text-muted”</p>
+    <a href="http://www.baidu.com" class="text-muted">连接使用了样式“text-muted”</a>
+    <p class="text-primary">该段落使用了样式 "text-primary"。</p>
+    <a class="text-primary" href="http://www.w3cschool.cc">链接使用了样式 "text-primary"。</a>
+    <p class="text-success">该段落使用了样式 "text-success"。</p>
+    <a class="text-success" href="http://www.w3cschool.cc">链接使用了样式 "text-success"。</a>
+    <p class="text-info">该段落使用了样式 "text-info"。</p>
+    <a class="text-info" href="http://www.w3cschool.cc">链接使用了样式 "text-info"。</a>
+    <p class="text-warning">该段落使用了样式 "text-warning"。</p>
+    <a class="text-warning" href="http://www.w3cschool.cc">链接使用了样式 "text-warning"。</a>
+    <p class="text-danger">该段落使用了样式 "text-danger"。</p>
+    <a class="text-danger" href="http://www.w3cschool.cc">链接使用了样式 "text-danger"。</a>
+
+    <h2>背景</h2>
+    <p class="bg-primary">该段落使用了类“bg-primary”</p>
+    <a class="bg-primary" href="www.baidu.com">该链接使用了类“bg-primary”</a>
+    <p class="bg-success">该段落使用了类 "bg-success"。</p>
+    <a class="bg-success" href="/index.php">该链接使用了类 "bg-success"。</a>
+    <p class="bg-info">该段落使用了类 "bg-info"。</p>
+    <a class="bg-info" href="/index.php">该链接使用了类 "bg-info"。</a>
+
+    <h2>实例</h2>
+    <div class="pull-left">元素浮动到左侧</div>
+    <div class="pull-right">元素浮动到右侧</div>
+    <div class="center-block" style="width:150px;background-color:#ccc;">该div显示在中间</div>
+
+    <div class="container-fluid">
+        <h1>Hello World!</h1>
+        <div class="row">
+            <div class="col-xs-6 col-sm-3" style="background-color:lavender;">
+                列 1<br>
+                重置窗口大小，查看效果。也尝试删除有 clearfix  的 div 查看效果。
+            </div>
+            <div class="col-xs-6 col-sm-3" style="background-color:lavenderblush;">列 2</div>
+            <!-- Add clearfix for only the required viewport -->
+            <div class="clearfix visible-xs"></div>
+            <div class="col-xs-6 col-sm-3" style="background-color:lightcyan;">列 3</div>
+            <div class="col-xs-6 col-sm-3" style="background-color:lightgray;">列 4</div>
+        </div>
+    </div>
+
+
+
+    <p>.close类可以显示一个关闭按钮</p>
+    <button type="button" class="close pull-left"><span aria-hidden="true">X</span><span class="sr-only">关闭</span> </button>
+
+    <p>.caret类显示一个下拉功能<span class="caret"></span> </p>
+    <p>.caret类在按钮中使用：</p>
+    <div class="btn-group">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Menu<span class="caret"></span> </button>
+        <ul class="dropdown-menu" role="menu">
+            <li><a href="#">一个连接</a> </li>
+            <li><a href="#">另一个连接</a> </li>
+            <li><a href="#">其他功能</a> </li>
+        </ul>
+    </div>
+
+    <p>关闭图标实例
+        <button type="button" class="close pull-left" aria-hidden="true">
+            &times;
+        </button>
+    </p>
+
+    <div style="height: 100px"></div>
+</div>
+
+
+<div class="container" style="padding: 40px;">
+    <p>勾号（✔） 表示元素在当前视口中可见。调整浏览器的窗口大小，或者在不同的设备上加载实例，测试响应式实用工具类。</p>
+    <div class="row visible-on">
+        <div class="col-xs-6 col-sm-3" style="background-color: #dedef8;
+											  box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+            <span class="hidden-xs">特别小型</span>
+            <span class="visible-xs">✔ 在特别小型设备上可见</span>
+        </div>
+        <div class="col-xs-6 col-sm-3" style="background-color: #dedef8;
+											  box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+            <span class="hidden-sm">小型</span>
+            <span class="visible-sm">✔ 在小型设备上可见</span>
+        </div>
+        <div class="clearfix visible-xs"></div>
+        <div class="col-xs-6 col-sm-3" style="background-color: #dedef8;
+											  box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+            <span class="hidden-md">中型</span>
+            <span class="visible-md">✔ 在中型设备上可见</span>
+        </div>
+        <div class="col-xs-6 col-sm-3" style="background-color: #dedef8;
+											  box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+            <span class="hidden-lg">大型</span>
+            <span class="visible-lg">✔ 在大型设备上可见</span>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
