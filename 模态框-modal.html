@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bootstrap 模板</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 引入 Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+  <!--  <script>
+        $(function() {
+            $('#myModal').modal({
+                keyboard: true//默认为true
+            })
+        });
+    </script>-->
+
+
+    <script>
+        $(function() {
+            $('#myModal').modal('hide')
+        });
+    </script>
+    <script>
+        $(function() {
+            $('#myModal').on('hidden.bs.modal',
+                    function() {
+                        alert('嘿，我听说您喜欢模态框...');
+                    })
+        });
+    </script>
+</head>
+<body>
+<h2>创建模态框（Modal）</h2>
+<!--按钮触发模态框-->
+<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" >开始演示模态框</button>
+<!--模态框（Modal）-->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">模态框标题</h4>
+            </div>
+            <div class="modal-body">
+                这里是模态框的内容,按下ESC退出。
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                <button type="button" class="btn btn-primary">确定</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
